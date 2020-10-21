@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1200"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2D59165722BBCFD0007B169F"
+               BuildableName = "CrowdBeacon.app"
+               BlueprintName = "CrowdBeacon"
+               ReferencedContainer = "container:CrowdBeacon.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2D59166C22BBCFD4007B169F"
+               BuildableName = "CrowdBeaconUITests.xctest"
+               BlueprintName = "CrowdBeaconUITests"
+               ReferencedContainer = "container:CrowdBeacon.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2D40B2DF23C24D2900359B34"
+               BuildableName = "CrowdBeaconUIScreenshots.xctest"
+               BlueprintName = "CrowdBeaconUIScreenshots"
+               ReferencedContainer = "container:CrowdBeacon.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <PreActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;# Don&#x2019;t run on iOS devices.&#10;if [[ &quot;${SDKROOT}&quot; != *&quot;simulator&quot;* ]]; then&#10;    exit 0&#10;fi&#10;&#10;xcrun simctl boot &quot;${TARGET_DEVICE_IDENTIFIER}&quot;&#10;&#10;xcrun simctl status_bar &quot;${TARGET_DEVICE_IDENTIFIER}&quot; override \&#10;    --time &quot;2020-02-01T09:41:00+02:00&quot; \&#10;    --dataNetwork wifi \&#10;    --wifiMode active \&#10;    --wifiBars 3 \&#10;    --cellularMode active \&#10;    --cellularBars 4 \&#10;    --batteryState discharging \&#10;    --batteryLevel 100&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "2D59165722BBCFD0007B169F"
+                     BuildableName = "CrowdBeacon.app"
+                     BlueprintName = "CrowdBeacon"
+                     ReferencedContainer = "container:CrowdBeacon.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PreActions>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2D59165722BBCFD0007B169F"
+            BuildableName = "CrowdBeacon.app"
+            BlueprintName = "CrowdBeacon"
+            ReferencedContainer = "container:CrowdBeacon.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2D59165722BBCFD0007B169F"
+            BuildableName = "CrowdBeacon.app"
+            BlueprintName = "CrowdBeacon"
+            ReferencedContainer = "container:CrowdBeacon.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
